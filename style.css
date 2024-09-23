@@ -12,6 +12,29 @@ header {
     text-align: center;
 }
 
+#topbar {
+    position: relative;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    height: 200px;
+    z-index: 1;
+}
+
+#topbar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://asset-a.grid.id/crop/0x0:0x0/700x465/photo/2019/08/07/1325166108.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    z-index: -1; 
+}
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -25,6 +48,17 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+}
+
+nav {
+    display: block;
+    position: fixed; 
+    background-color: #333;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 10px 0;
 }
 
 h1 {
@@ -66,4 +100,21 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+    position: bottom;
+}
+
+.testimonial {
+    border: 1px solid #333;
+    padding: 5%;
+    margin: 10px 0;
+    border-radius: 10px;
+    min-width: 200px;
+    max-width: 400px;
+}
+
+#testimoni{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
 }
