@@ -108,8 +108,33 @@ footer {
     padding: 5%;
     margin: 10px 0;
     border-radius: 10px;
-    min-width: 200px;
+    min-width: 50px;
     max-width: 400px;
+}
+
+.produkal {
+    border: 1px solid #333;
+    padding: 5%;
+    margin: 10px 0;
+    border-radius: 10px;
+    min-width: 50px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.product-pic{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.produki {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 15px;
+    padding: 0px;
+    background-image: url("https://st.depositphotos.com/62604338/60931/i/1600/depositphotos_609310112-stock-photo-african-man-smiling-happy-confident.jpg");
 }
 
 #testimoni{
