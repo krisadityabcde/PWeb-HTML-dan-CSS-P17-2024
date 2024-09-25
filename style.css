@@ -57,7 +57,7 @@ nav {
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 10;
     padding: 10px 0;
 }
 
@@ -100,7 +100,7 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-    position: bottom;
+    bottom: 0;
 }
 
 .testimonial {
@@ -113,13 +113,21 @@ footer {
 }
 
 .produk {
-    border: 1px solid #333;
+    border: 3px solid #333;
     padding: 5%;
     margin: 10px 0;
     border-radius: 10px;
     min-width: 50px;
     max-width: 400px;
     text-align: center;
+}
+
+.produk:hover {
+    background-color: #ffcc00;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
 }
 
 .product-pic{
@@ -141,4 +149,12 @@ footer {
     grid-template-columns: auto auto auto;
     grid-gap: 10px;
     padding: 10px;
+}
+
+.testimonial:hover {
+    background-color: #ffcc00;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+    transition: all 0.3s ease;
 }
