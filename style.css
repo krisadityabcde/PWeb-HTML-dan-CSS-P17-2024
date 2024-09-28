@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    font-size: 1em;
 }
 
 header {
@@ -62,11 +63,14 @@ nav {
 }
 
 h1 {
+    text-align: center;
     font-size: 36px;
 }
 
+
 section {
-    padding: 20px;
+    padding : 20px;
+    flex : 1;
 }
 
 .cta-button {
@@ -98,9 +102,7 @@ footer {
     text-align: center;
     padding: 10px 0;
     position: relative;
-    bottom: 0;
     width: 100%;
-    bottom: 0;
 }
 
 .testimonial {
@@ -120,6 +122,8 @@ footer {
     min-width: 50px;
     max-width: 400px;
     text-align: center;
+    width: 100%; 
+    box-sizing: border-box;
 }
 
 .produk:hover {
@@ -139,7 +143,7 @@ footer {
 
 .showcase {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Menyesuaikan jumlah kolom sesuai ukuran layar */
     grid-gap: 15px;
     padding: 0px;
 }
@@ -157,4 +161,24 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transform: scale(1.02);
     transition: all 0.3s ease;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.produk p {
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    white-space: normal; 
+}
+
+
+@media (max-width: 600px) {
+    body {
+        font-size: 0.9em;
+    }
 }
