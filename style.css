@@ -16,7 +16,7 @@ header {
 #topbar {
     position: relative;
     color: #fff;
-    padding: 20px;
+    padding-bottom: 50px;
     text-align: center;
     height: 200px;
     z-index: 1;
